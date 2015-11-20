@@ -76,60 +76,56 @@ hr {
 	box-shadow: 0 0 20px;
 	border-top: 1px solid white;
 }
-
-.title {
+.header{
 	padding-left: 100px;
 	position: relative;
 	top: 200px;
-}
-
-.title h1 {
+	p{
 	font-size: 25px;
 	color: #ab9b6d;
 }
-
-.title h2 {
-	font-size: 50px;
+}
+h1 {
+	font-size: 60px;
 	font-weight: 700;
-	line-height: 10px;
+	margin-bottom: 50px;
 }
-
-.title span {
-	display: inline-flex;
-	border: 3px solid @primary-color;
-	margin-top: 45px;
-	height: 40px;
-}
-
-.title span a {
-	color: white;
-	text-decoration: none;
-	background-color: @primary-color;
+.new {
 	font-size: 20px;
-	padding: 5px;
-	font-weight: 700;
-	width: 140px;
-	text-align: center;
-}
+    text-decoration: none;
+    background-color: white;
+    font-weight: 700;
+    width: 140px;
+    text-align: center;
+    border: 4px solid #D21826;
+    color: #D21826;
+    padding-right: 10px;
+     a{
+    background: #D21826;
+    color: white;
+    padding-right: 10px;
+   margin-right: 10px;
 
-.title span:hover {
+    &:hover{
+    	text-decoration: none;
+     }
+    }
+}
+[al-app] div {
+    height: 20px;
+    background-color: red;
+    cursor: pointer;
+}
+.opened { height: 150px !important; }
+.header span:hover {
 	text-decoration: none;
 	background: white;
 }
 
-.title span a:active {
+.header span a:active {
 	text-decoration: none;
 	color: @primary-color;
 }
-
-.title p {
-	color: @primary-color;
-	font-size: 20px;
-	padding: 5px;
-	text-align: center;
-	width: 100px;
-}
-
 .god h2 {
 	font-size: 70px;
 	font-weight: 800;
@@ -468,19 +464,14 @@ hr {
 		text-align: center;
 	}
 
-	.title {
+	.header{
 		padding: 10px;
 		position: initial;
 	}
 
-	.title span {
+	.header span {
 		width: 100%;
 	}
-
-	.title h2 {
-		line-height: 40px;
-	}
-
 	.god img {
 		position: initial;
 		width: 80%;
@@ -545,16 +536,16 @@ hr {
 		text-align: center;
 	}
 
-	.title {
+	.header {
 		padding: 10px;
 		position: initial;
 	}
 
-	.title span {
+	.header span {
 		width: 100%;
 	}
 
-	.title h2 {
+	.header h2 {
 		line-height: 40px;
 	}
 
@@ -607,16 +598,16 @@ hr {
 		text-align: center;
 	}
 
-	.title {
+	.header {
 		padding: 10px;
 		position: initial;
 	}
 
-	.title span {
+	.header span {
 		width: 100%;
 	}
 
-	.title h2 {
+	.header h2 {
 		line-height: 40px;
 	}
 
