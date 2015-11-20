@@ -49,11 +49,7 @@ jQuery(document).ready(function($) {
 					jQuery('#scrollup').fadeOut('fast');
 				}
 			});
-			 $("#toggler").on("click", function(){
-  $("#popup-credit").show();
- })
- $(".cancelComment").on("click", function(){
-  $("#popup-credit").hide();
- })
+			
 		});
+
 });
