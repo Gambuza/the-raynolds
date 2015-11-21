@@ -13,6 +13,17 @@
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 </head>
 <body>
+<script>
+	$(function() {
+    var caption = $('.accordeon-caption'),
+        content = $('.accordeon-content').hide();         
+    caption.click(function(e) {
+        e.preventDefault();
+        content.not($(this).next(content)).removeClass('active').slideUp(600);
+        $(this).next(content).toggleClass('active').slideToggle(600);
+    });
+});
+</script>
 	<div class="container">
 		<div class="main">
 			<div class="col-md-10" id="top-menu">
@@ -67,10 +78,13 @@
 				<div>
 					<span class="video_play" id="video_play">
 						<h3>Made in Emerica</h3>
-						<p>Watch the video</p>
-</span>
-</div>
-</div>
+						</span>
+						</div>
+						</div>
+						<div class="click_video">
+						<a href="" class="accordeon-caption">Watch the video</a>
+						<div class="accordeon-content"><b><iframe width="640" height="360" src="https://www.youtube.com/embed/uAJjrQe6nqw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+						</div>
 			<div id="profil" class="profil">
 				<div class="row">
 					<div class="col-md-6">
@@ -95,7 +109,6 @@
 			</div>
 									<div al-app>
 
-    <div al-click="x=!x" al-css="opened: x">Content</div>
     </div>
 			</div>
 			<div id="footer">
