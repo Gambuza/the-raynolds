@@ -49,6 +49,15 @@ jQuery(document).ready(function($) {
 					jQuery('#scrollup').fadeOut('fast');
 				}
 			});
+				$(function() {
+    var caption = $('.accordeon-caption'),
+        content = $('.accordeon-content').hide();         
+    caption.click(function(e) {
+        e.preventDefault();
+        content.not($(this).next(content)).removeClass('active').slideUp(600);
+        $(this).next(content).toggleClass('active').slideToggle(600);
+    });
+});
 			
 		});
 
