@@ -71,9 +71,7 @@ nav a#pull {
 .search {
 	margin-top: 30px;
 	font-size: 16px;
-}
-
-.search input {
+	input {
 	width: 140px;
 	border: none;
 	line-height: 30px;
@@ -81,6 +79,7 @@ nav a#pull {
 	background-color: #F4F4F4;
 	padding-left: 5px;
 	outline: @white-color;
+}
 }
 
 hr {
@@ -136,11 +135,12 @@ h1 {
 	  text-align: center;
     position: relative;
     top: -500px;
-}
-.click-video a{
+    a{
 font-size: 20px;
     color: @white-color;
 }
+}
+
 .header span a:active {
 	text-decoration: none;
 	color: @primary-color;
@@ -340,14 +340,14 @@ font-size: 20px;
 	font-size: 25px;
 	}
 #boxes #dialog {
-	width:375px;
-	height:203px;
+	width:70%;
+	height:500px;
 	padding:10px;
-	background-color:#ffffff;
-	}
-.close {
-	float: right;
-	margin-top: 148px;
+	background-color:@white-color;
+	iframe{
+min-width: 100%;
+    min-height: 100%;
+		}
 	}
 .about:checked+.video-play a {
 	position: initial;
@@ -360,12 +360,11 @@ font-size: 20px;
 	border: 10px solid @white-color;
 	box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
 	background-color: @white-color;
-	width: 800px;
+	max-width: 800px;
 	position: relative;
 	top: -150px;
 	padding: 10px; 
-	margin-left: 200px;
-	margin-right: 200px;
+	left: 15%;
 	h3 {
 	font-size: 35px;
 	font-weight: 700;
@@ -435,11 +434,13 @@ font-size: 20px;
 	color: @text-color;
 	width: 100%;
 	font-size: 16px;
+	font-weight: 700;
 	height: 50px;
 }
 
 .content {
 	display: inline-block;
+	padding: 10px;
 	h3 {
 	font-size: 25px;
 	text-align: center;
@@ -472,14 +473,15 @@ font-size: 20px;
 
 @media screen and (min-width: 901px) and (max-width: 1280px)   {
 		.about{
-		    max-width: 100%;
-		        min-width: 100%;
-		    margin-left: 0;
-		    margin-right: 0;
+		 max-width: 100%;
+ margin-left: 0;
+margin-right: 0;
+top: 0;
+left: 0;
+	img{
+		max-width: 70%;
 	}
-	#form{
-		min-width: 100%;
-	}
+}
 	.header{
 margin: 10px;
 padding:10px;
@@ -487,6 +489,22 @@ text-align: center;
 h1{
 	font-size: 50px;
 }
+}
+#boxes #dialog {
+	width:70%;
+	height:70%;
+	padding:10px;
+	background-color:@white-color;
+	iframe{
+min-width: 100%;
+    min-height: 100%;
+		}
+	}
+#application textarea{
+width: 50%;
+}
+#application input{
+width: 50%;
 }
 .header{
 		min-width: 100%;
@@ -531,12 +549,24 @@ h1{
 }
 @media screen and (max-width: 900px) {
 		.about{
-		    max-width: 100%;
-		    margin-left: 0;
-		    margin-right: 0;
+		 max-width: 100%;
+ margin-left: 0;
+margin-right: 0;
+top: 0;
+left: 0;
+		img{
+		max-width: 70%;
 	}
-		#form{
-		min-width: 100%;
+}
+#boxes #dialog {
+	width:70%;
+	height:40%;
+	padding:10px;
+	background-color:@white-color;
+	iframe{
+min-width: 100%;
+    min-height: 100%;
+		}
 	}
 	.header{
 margin: 10px;
@@ -545,6 +575,12 @@ text-align: center;
 h1{
 	font-size: 50px;
 }
+}
+#application input{
+width: 50%;
+}
+#application textarea{
+width: 50%;
 }
 .two-header img {
 	position: initial;
@@ -583,13 +619,21 @@ h1{
 }
 @media only screen and (max-width : 480px) { 
 		.about{
-		    max-width: 100%;
-		    margin-left: 0;
-		    margin-right: 0;
+		 max-width: 100%;
+ margin-left: 0;
+margin-right: 0;
+top: 0;
+left: 0;
 	}
-		#form{
-		min-width: 100%;
-		margin-top: -150px;
+#boxes #dialog {
+	width:70%;
+	height:40%;
+	padding:10px;
+	background-color:@white-color;
+	iframe{
+max-width: 100%;
+    max-height: 100%;
+		}
 	}
 		.header{
 margin: 10px;
@@ -644,20 +688,20 @@ h1{
     .scrollup {
 	display: none;
 }
+#application input{
+width: 90%;
+}
+#application textarea{
+width: 90%;
+}
 }
 @media only screen and (max-width : 320px) {  
 		.about{
-		    max-width: 100%;
-		    margin-left: 0;
-		    margin-right: 0;
-	}
-		#application{
-		min-width: 100%;
-		margin-top: -150px;
-		 input{
-		 	max-width: 100%;
-		 	width: 200px;
-		 }
+		 max-width: 100%;
+ margin-left: 0;
+margin-right: 0;
+top: 0;
+left: 0;
 	}
 .header{
 margin: 10px;
@@ -666,6 +710,22 @@ text-align: center;
 h1{
 	font-size: 50px;
 }
+}
+#boxes #dialog {
+	width:70%;
+	height:40%;
+	padding:10px;
+	background-color:@white-color;
+	iframe{
+max-width: 100%;
+    max-height: 100%;
+		}
+	}
+#application input{
+width: 90%;
+}
+#application textarea{
+width: 90%;
 }
 .two-header img {
 	position: initial;
@@ -688,16 +748,6 @@ h1{
     nav li a {  
         border-bottom: 1px solid #576979;  
     }  
-}
-#application input {
-	padding: 10px;
-	margin: 10px;
-	min-width: 100%;
-}
-#application textarea {
-	padding: 10px;
-	margin: 10px;
-	min-width: 100%;
 }
 .scrollup {
 	display: none;
